@@ -19,5 +19,14 @@ Los metacaracteres se usan en expresiones regulares para criterios de búsqueda 
 
 Los metacaracteres básicos son los siguientes:
 ```
-\ ^ | . $ ? * + ( ) [ {
+\ ^ | . $ ? * + ( ) [ ] { }
+```
+Otros metacaracteres:
+```
+\d    Localiza cualquier dígito decimal
+\D    Localiza cualquier carácter que no sea numérico
+\w    Localiza cualquier carácter alfanumérico
+\W    Localiza cualquier carácter no alfanumérico
+\s    Localiza espacio en blanco
+\S    Localiza aquellos que no sean espacios en blanco
 ```
