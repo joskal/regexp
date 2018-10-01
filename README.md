@@ -18,9 +18,27 @@ Un metacarácter es un carácter que tiene un significado especial (al contrario
 Los metacaracteres se usan en expresiones regulares para criterios de búsqueda y manipulación de caracteres.
 
 Los metacaracteres básicos son los siguientes:
-```
-\ ^ | . $ ? * + ( ) [ ] { }
-```
+
+### \
+> Localiza un metacarácter o carácter no-alfanumérico como carácter literal <br>
+`/\$/g` Busca el signo **$** en el texto.
+
+
+### ^
+### |
+### . 
+> Carácter comodín (wildcard). Equivale a cualquier carácter literal.<br>
+`/./g`
+
+
+### $ 
+### ? 
+### * 
+### + 
+### ( )
+### [ ]
+### { }
+
 Otros metacaracteres:
 ```
 \d    Localiza cualquier dígito decimal
