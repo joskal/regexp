@@ -2,13 +2,18 @@
 Una expresión regular es una secuencia de caracteres que definen un patrón de búsqueda.
 La secuencia de caracteres a buscar va englobada entre dos caracteres slash `/regexp/`
 
-Sintaxis:
+## Sintaxis:
 ```
 /regexp/mode
 ```
 Donde `mode` puede ser uno o varios de los siguientes caracteres:
-1. **/regex/**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No mode 
-2. **/regex/g**&nbsp;&nbsp;&nbsp;Global
-3. **/regex/i**&nbsp;&nbsp;&nbsp;Case insensitive 
-4. **/regex/s**&nbsp;&nbsp;&nbsp;Single line 
-5. **/regex/m**&nbsp;&nbsp;&nbsp;Multiline
+* **/regex/**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No mode 
+* **/regex/g**&nbsp;&nbsp;&nbsp;Global
+* **/regex/i**&nbsp;&nbsp;&nbsp;Case insensitive 
+* **/regex/s**&nbsp;&nbsp;&nbsp;Single line 
+* **/regex/m**&nbsp;&nbsp;&nbsp;Multiline
+
+## Metaracteres
+Un metacarácter es un carácter que tiene un significado especial (al contrario que un carácter literal).
+
+Los metacaracteres se usan en expresiones regulares para criterios de búsqueda y manipulación de caracteres.
