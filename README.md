@@ -16,3 +16,8 @@ Donde `mode` puede ser uno o varios de los siguientes caracteres:
 ## Metacharacters
 Un metacarácter es un carácter que tiene un significado especial (al contrario que un carácter literal).
 Los metacaracteres se usan en expresiones regulares para criterios de búsqueda y manipulación de caracteres.
+
+Los metacaracteres básicos son los siguientes:
+```
+\ ^ | . $ ? * + ( ) [ {
+```
