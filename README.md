@@ -13,7 +13,6 @@ Donde `mode` puede ser uno o varios de los siguientes caracteres:
 * **/regex/s**&nbsp;&nbsp;&nbsp;Single line 
 * **/regex/m**&nbsp;&nbsp;&nbsp;Multiline
 
-## Metaracteres
+## Metacharacters
 Un metacarácter es un carácter que tiene un significado especial (al contrario que un carácter literal).
-
 Los metacaracteres se usan en expresiones regulares para criterios de búsqueda y manipulación de caracteres.
