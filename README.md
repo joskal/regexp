@@ -19,29 +19,35 @@ Los metacaracteres se usan en expresiones regulares para criterios de búsqueda 
 
 Los metacaracteres básicos son los siguientes:
 
-### \
+> ### \
 > Localiza un metacarácter o carácter no-alfanumérico como carácter literal <br>
 `/\$/g` Busca el signo **$** en el texto.
 
 
-### ^
-### |
-### . 
+>### ^
+
+>### |
+
+> ### . 
 > **Wildcard** (Carácter comodín). Equivale a cualquier carácter literal.<br>
 `/.ar/g` :arrow_right: bar tar jar par
 
 
-### $ 
-### ? 
-### * 
-### + 
-### ( )
-### [ ]
+>### $ 
+
+>### ? 
+
+>### * 
+
+>### + 
+
+>### ( )
+
+> ### [ ]
 > **Character set** o **Character class**. Localiza los caracteres incluidos entre `[]`en conjunción con otros.<br>
 `/[bc]at/g`  :arrow_right:  bat cat
 
-
-### { }
+> ### { }
 
 Otros metacaracteres:
 ```
