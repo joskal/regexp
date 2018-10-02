@@ -24,7 +24,8 @@ Los metacaracteres básicos son los siguientes:
 `/\$/g` :arrow_right: **$**
 
 
->### ^
+>### ^ <br>
+> **Negating**
 
 >### |
 
@@ -46,8 +47,13 @@ Los metacaracteres básicos son los siguientes:
 > ### [ ]
 > **Character set** o **Character class**. Localiza los caracteres incluidos entre `[]`en conjunción con otros.<br>
 `/[bc]at/g`  :arrow_right:  bat cat <br>
-`/pa[tdnr]/g`  :arrow_right:  pat pad pan par
-`/me[td]al/g`  :arrow_right:  metal medal
+`/pa[tdnr]/g`  :arrow_right:  pat pad pan par <br>
+`/me[td]al/g`  :arrow_right:  metal medal<br><br>
+**Character range [start-end]**. Localiza un rango de caracteres.<br>
+`/file-[A-F]/g` :arrow_right:  file-A file-B file-C file-D file-E file-F <br><br>
+**Negating character set or range**. Devuelve un resultado que no **[^]** coincida con el carácter o rango especificado <br>
+`/file[^A]/g` :arrow_right: file-B file-C file-D file-E file-F <br>
+`/file[^A-D]/g` :arrow_right: file-E file-F <br>
 
 
 > ### { }
