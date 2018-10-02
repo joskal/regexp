@@ -58,12 +58,12 @@ Los metacaracteres básicos son los siguientes:
 
 > ### { }
 
-Otros metacaracteres:
+## Shorthand character set:
 ```
-\d    Localiza cualquier dígito decimal
-\D    Localiza cualquier carácter que no sea numérico
-\w    Localiza cualquier carácter alfanumérico
-\W    Localiza cualquier carácter no alfanumérico
-\s    Localiza espacio en blanco
-\S    Localiza aquellos que no sean espacios en blanco
+\d  [0-9]         Localiza cualquier dígito decimal
+\D  [^0-9]        Localiza cualquier carácter que no sea numérico
+\w  [a-zA-Z0-9]   Localiza cualquier carácter alfanumérico
+\W  [^\w]         Localiza cualquier carácter no alfanumérico
+\s  [\t\n\r\f\v]  Localiza espacios en blanco
+\S  [^\s]         Localiza aquellos que no sean espacios en blanco
 ```
