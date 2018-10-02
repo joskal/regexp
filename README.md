@@ -20,8 +20,8 @@ Los metacaracteres se usan en expresiones regulares para criterios de búsqueda 
 Los metacaracteres básicos son los siguientes:
 
 > ### \
-> Localiza un metacarácter o carácter no-alfanumérico como carácter literal <br>
-`/\$/g` Busca el signo **$** en el texto.
+> **Backslash**. Localiza un metacarácter o carácter no-alfanumérico como carácter literal. <br>
+`/\$/g` :arrow_right: **$**
 
 
 >### ^
