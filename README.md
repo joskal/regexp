@@ -45,7 +45,8 @@ Los metacaracteres básicos son los siguientes:
 
 > ### [ ]
 > **Character set** o **Character class**. Localiza los caracteres incluidos entre `[]`en conjunción con otros.<br>
-`/[bc]at/g`  :arrow_right:  bat cat
+`/[bc]at/g`  :arrow_right:  bat cat <br>
+`/pa[tdnr]/g`  :arrow_right:  pat pad pan par
 
 > ### { }
 
