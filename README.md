@@ -27,8 +27,8 @@ Los metacaracteres básicos son los siguientes:
 ### ^
 ### |
 ### . 
-> Carácter comodín (wildcard). Equivale a cualquier carácter literal.<br>
-`/./g`
+> **Wildcard** (Carácter comodín). Equivale a cualquier carácter literal.<br>
+`/.ar/g` :arrow_right: bar tar jar par
 
 
 ### $ 
@@ -37,6 +37,10 @@ Los metacaracteres básicos son los siguientes:
 ### + 
 ### ( )
 ### [ ]
+> **Character set** o **Character class**. Localiza los caracteres incluidos entre `[]`en conjunción con otros.<br>
+`/[bc]at/g`  :arrow_right:  bat cat
+
+
 ### { }
 
 Otros metacaracteres:
