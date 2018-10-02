@@ -62,7 +62,7 @@ Los metacaracteres básicos son los siguientes:
 ```
 \d  [0-9]         Localiza cualquier dígito decimal
 \D  [^0-9]        Localiza cualquier carácter que no sea numérico
-\w  [a-zA-Z0-9]   Localiza cualquier carácter alfanumérico
+\w  [a-zA-Z0-9_]  Localiza cualquier carácter alfanumérico o subrayado _
 \W  [^\w]         Localiza cualquier carácter no alfanumérico
 \s  [\t\n\r\f\v]  Localiza espacios en blanco
 \S  [^\s]         Localiza aquellos que no sean espacios en blanco
