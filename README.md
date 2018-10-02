@@ -43,7 +43,7 @@ Los metacaracteres básicos son los siguientes:
 `/jan(uary)?/g` :arrow_right: jan january
 
 > ### * 
-> **Quantifier** (Cuantificador). Localiza el carácter grupo que le precede entre cero y más veces. <br>
+> **Quantifier** (Cuantificador). Localiza el carácter o grupo que le precede entre cero y más veces. <br>
 `/colou*r/g` :arrow_right: color colour colouuur <br>
 `/oh*/g` :arrow_right: o oh ohh ohhh ohhhh ohhhhh <br>
 `/[0-9]*word/g` :arrow_right: word 1word 22word 333word 4444word
