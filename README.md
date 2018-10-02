@@ -24,25 +24,27 @@ Los metacaracteres básicos son los siguientes:
 `/\$/g` :arrow_right: **$**
 
 
->### ^ <br>
+> ### ^ <br>
 > **Negating**
 
->### |
+> ### |
 
 > ### . 
 > **Wildcard** (Carácter comodín). Equivale a cualquier carácter literal.<br>
 `/.ar/g` :arrow_right: bar tar jar par
 
 
->### $ 
+> ### $ 
 
->### ? 
+> ### ?
+> **Quantifier** (Cuantificador). Localiza el carácter que le precede entre cero y una veces. <br>
+`/colou?r/g` :arrow_right: color colour
 
->### * 
+> ### * 
 
->### + 
+> ### + 
 
->### ( )
+> ### ( )
 
 > ### [ ]
 > **Character set** o **Character class**. Localiza los caracteres incluidos entre `[]`en conjunción con otros.<br>
