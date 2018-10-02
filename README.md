@@ -52,7 +52,7 @@ Los metacaracteres básicos son los siguientes:
 **Character range [start-end]**. Localiza un rango de caracteres.<br>
 `/file-[A-F]/g` :arrow_right:  file-A file-B file-C file-D file-E file-F <br><br>
 **Negating character set or range**. Devuelve un resultado que no **[^]** coincida con el carácter o rango especificado <br>
-`/file[^A]/g` :arrow_right: file-B file-C file-D file-E file-F <br>
+`/file[^AB]/g` :arrow_right: file-C file-D file-E file-F <br>
 `/file[^A-D]/g` :arrow_right: file-E file-F <br>
 
 
