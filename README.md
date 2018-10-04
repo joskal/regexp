@@ -69,9 +69,12 @@ Los metacaracteres básicos son los siguientes:
 
 
 > ### { }
->**Limiting the repetition** (limitando la repetición). **{n}** Localiza el elemento precedente exactamente **n** veces.<br>
 > `192882 998 288 3484848 488ASD 39222 22 333 34566 23567`<br>
+> **Limiting the repetition** (limitando la repetición).<br> 
+> **{n}** Localiza el elemento precedente exactamente **n** veces.<br>
 > `/\d{3}/g` :arrow_right: `192 882 998 288 348 848 488 392 333 345 235`
+> **{min,}** Localiza el elemento precedente al menos un **min**imo veces.<br>
+> **{min,max}** Localiza el elemento precedente al menos **min**imo veces pero no más de un **max**imp veces.<br>
 
 ## Shorthand character set:
 ```
