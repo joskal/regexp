@@ -56,7 +56,7 @@ Los metacaracteres básicos son los siguientes:
 
 > ### [ ]
 > `bat pat pad metal pan par medal cat` <br>
-> file-A file-B file-C file-D file-E file-F <br>
+> `file-A file-B file-C file-D file-E file-F` <br>
 > **Character set** o **Character class**. Localiza los caracteres incluidos entre `[]`en conjunción con otros.<br>
 `/[bc]at/g`  :arrow_right:  bat cat <br>
 `/pa[tdnr]/g`  :arrow_right:  pat pad pan par <br>
