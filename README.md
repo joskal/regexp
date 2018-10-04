@@ -56,6 +56,7 @@ Los metacaracteres básicos son los siguientes:
 
 > ### [ ]
 > **Character set** o **Character class**. Localiza los caracteres incluidos entre `[]`en conjunción con otros.<br>
+`bat pat pad metal pan par medal cat` <br>
 `/[bc]at/g`  :arrow_right:  bat cat <br>
 `/pa[tdnr]/g`  :arrow_right:  pat pad pan par <br>
 `/me[td]al/g`  :arrow_right:  metal medal<br><br>
@@ -68,8 +69,8 @@ Los metacaracteres básicos son los siguientes:
 
 > ### { }
 >**Limiting the repetition** (limitando la repetición). **{n}** Localiza el elemento precedente exactamente **n** veces.<br>
-> `192882 998 288 3484848 488ASD 39222 22 333 34566 23567`
-/\d{3}/g :arrow_right: 192 882 998 288 348 848 488 392 333 345 235
+> `192882 998 288 3484848 488ASD 39222 22 333 34566 23567`<br>
+> /\d{3}/g :arrow_right: 192 882 998 288 348 848 488 392 333 345 235
 
 ## Shorthand character set:
 ```
