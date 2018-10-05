@@ -53,10 +53,11 @@ Los metacaracteres básicos son los siguientes:
 `/colou+r/g` :arrow_right: colour colouuur
 
 > ### ( )
+> **Grouping**
 
 > ### [ ]
 > `bat pat pad metal pan par medal cat` <br>
-> `file-A file-B file-C file-D file-E file-F` <br>
+> `file-A file-B file-C file-D file-E file-F` <br><br>
 > **Character set** o **Character class**. Localiza los caracteres incluidos entre `[]`en conjunción con otros.<br>
 `/[bc]at/g`  :arrow_right:  bat cat <br>
 `/pa[tdnr]/g`  :arrow_right:  pat pad pan par <br>
@@ -69,7 +70,7 @@ Los metacaracteres básicos son los siguientes:
 
 
 > ### { }
-> `192882 998 288 3484848 488ASD 39222 22 333 34566 23567`<br>
+> `192882 998 288 3484848 488ASD 39222 22 333 34566 23567`<br> <br>
 > **Limiting the repetition** (limitando la repetición).<br> 
 > **{n}** Localiza el elemento precedente exactamente **n** veces.<br>
 > `/\d{3}/g` :arrow_right: `192 882 998 288 348 848 488 392 333 345 235`<br>
