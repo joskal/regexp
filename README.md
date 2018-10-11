@@ -26,7 +26,9 @@ Los metacaracteres básicos son los siguientes:
 <hr>
 
 > ### ^ <br>
-> **Negating**
+> **Negating**<br>
+> `file01 file02 file03` <br>
+> /file0[^23]/g :arrow_right: file01
 
 <hr>
 
