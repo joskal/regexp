@@ -31,7 +31,9 @@ Los metacaracteres básicos son los siguientes:
 <hr>
 
 > ### |
+
 <hr>
+
 > ### . 
 > **Wildcard** (Carácter comodín). Equivale a cualquier carácter literal.<br>
 `/.ar/g` :arrow_right: bar tar jar par
