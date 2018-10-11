@@ -23,16 +23,22 @@ Los metacaracteres básicos son los siguientes:
 > **Backslash**. Localiza un metacarácter o carácter no-alfanumérico como carácter literal. <br>
 `/\$/g` :arrow_right: **$**
 
+<hr>
 
 > ### ^ <br>
 > **Negating**
 
+<hr>
+
 > ### |
+
+<hr>
 
 > ### . 
 > **Wildcard** (Carácter comodín). Equivale a cualquier carácter literal.<br>
 `/.ar/g` :arrow_right: bar tar jar par
 
+<hr>
 
 > ### $ 
 
