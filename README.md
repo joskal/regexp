@@ -26,11 +26,10 @@ Los metacaracteres básicos son los siguientes:
 <hr>
 
 > ### ^ <br>
-> **Negating**<br>
+> **Negating** (Negación). Devuelve un resultado que no [^] coincida con el carácter o rango especificado <br>
 > `file01 file02 file03` <br>
-> /file0[^23]/g :arrow_right: file01
-
-<hr>
+> `/file0[^23]/g` :arrow_right: file01 <br>
+> <hr>
 
 > ### |
 
