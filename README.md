@@ -21,15 +21,17 @@ Los metacaracteres básicos son los siguientes:
 
 > ### \
 > **Backslash**. Localiza un metacarácter o carácter no-alfanumérico como carácter literal. <br>
-`/\$/g` :arrow_right: **$**
+`!@#$%^&*()_+1234567890abcdef` <br>
+`/\$/g` :arrow_right: `$`
 
 <hr>
 
 > ### ^ <br>
 > **Negating** (Negación). Devuelve un resultado que no [^] coincida con el carácter o rango especificado <br>
 > `file01 file02 file03` <br>
-> `/file0[^23]/g` :arrow_right: file01 <br>
-> <hr>
+> `/file0[^23]/g` :arrow_right: `file01`
+
+<hr>
 
 > ### |
 
@@ -47,9 +49,10 @@ Los metacaracteres básicos son los siguientes:
 
 > ### ?
 > **Quantifier** (Cuantificador). Localiza el carácter o grupo que le precede entre cero y una veces. <br>
-`/colou?r/g` :arrow_right: color colour <br>
-`/o?esophagus/g` :arrow_right: oesophagus esophagus <br>
-`/jan(uary)?/g` :arrow_right: jan january
+`color colour oesophagus esophagus jan january` 
+`/colou?r/g` :arrow_right: `color colour` <br>
+`/o?esophagus/g` :arrow_right: `oesophagus esophagus` <br>
+`/jan(uary)?/g` :arrow_right: `jan january`
 
 <hr>
 
