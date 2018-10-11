@@ -27,9 +27,14 @@ Los metacaracteres básicos son los siguientes:
 <hr>
 
 > ### ^ <br>
-> **Negating** (Negación). Devuelve un resultado que no [^] coincida con el carácter o rango especificado <br>
+> **Anchor** (Anclaje). Devuelve un resultado que coincida con el carácter o rango especificado y que esté al comienzo de la línea. <br>
 > `file01 file02 file03` <br>
-> `/file0[^23]/g` :arrow_right: `file01`
+> `/^file../g` :arrow_right: `file01`
+
+<hr>
+
+> ### $
+> **Anchor** (Anclaje).
 
 <hr>
 
@@ -40,10 +45,6 @@ Los metacaracteres básicos son los siguientes:
 > ### . 
 > **Wildcard** (Carácter comodín). Equivale a cualquier carácter literal.<br>
 `/.ar/g` :arrow_right: bar tar jar par
-
-<hr>
-
-> ### $ 
 
 <hr>
 
