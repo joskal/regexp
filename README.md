@@ -49,7 +49,7 @@ Los metacaracteres básicos son los siguientes:
 
 > ### ?
 > **Quantifier** (Cuantificador). Localiza el carácter o grupo que le precede entre cero y una veces. <br>
-`color colour oesophagus esophagus jan january` 
+`color colour oesophagus esophagus jan january` <br>
 `/colou?r/g` :arrow_right: `color colour` <br>
 `/o?esophagus/g` :arrow_right: `oesophagus esophagus` <br>
 `/jan(uary)?/g` :arrow_right: `jan january`
