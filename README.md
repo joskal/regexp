@@ -22,10 +22,14 @@ Los metacaracteres básicos son los siguientes:
 > ### \
 > **Backslash**. Localiza un metacarácter o carácter no-alfanumérico como carácter literal. <br>
 `/\$/g` :arrow_right: **$**
+
 <hr>
+
 > ### ^ <br>
 > **Negating**
+
 <hr>
+
 > ### |
 <hr>
 > ### . 
@@ -36,11 +40,15 @@ Los metacaracteres básicos son los siguientes:
 
 > ### $ 
 
+<hr>
+
 > ### ?
 > **Quantifier** (Cuantificador). Localiza el carácter o grupo que le precede entre cero y una veces. <br>
 `/colou?r/g` :arrow_right: color colour <br>
 `/o?esophagus/g` :arrow_right: oesophagus esophagus <br>
 `/jan(uary)?/g` :arrow_right: jan january
+
+<hr>
 
 > ### * 
 > **Quantifier** (Cuantificador). Localiza el carácter o grupo que le precede entre cero y más veces. <br>
@@ -48,12 +56,18 @@ Los metacaracteres básicos son los siguientes:
 `/oh*/g` :arrow_right: o oh ohh ohhh ohhhh ohhhhh <br>
 `/[0-9]*word/g` :arrow_right: word 1word 22word 333word 4444word
 
+<hr>
+
 > ### + 
 > **Quantifier** (Cuantificador). Localiza el carácter o grupo que le precede entre una y más veces. <br>
 `/colou+r/g` :arrow_right: colour colouuur
 
+<hr>
+
 > ### ( )
 > **Grouping**
+
+<hr>
 
 > ### [ ]
 > `bat pat pad metal pan par medal cat` <br>
@@ -68,6 +82,7 @@ Los metacaracteres básicos son los siguientes:
 `/file[^AB]/g` :arrow_right: file-C file-D file-E file-F <br>
 `/file[^A-D]/g` :arrow_right: file-E file-F <br>
 
+<hr>
 
 > ### { }
 > `192882 998 288 3484848 488ASD 39222 22 333 34566 23567`<br> <br>
@@ -76,6 +91,8 @@ Los metacaracteres básicos son los siguientes:
 > `/\d{3}/g` :arrow_right: `192 882 998 288 348 848 488 392 333 345 235`<br>
 > **{mín,}** Localiza el elemento precedente al menos un **mín**imo veces.<br>
 > **{mín,máx}** Localiza el elemento precedente al menos un **mín**imo veces y no más de un **máx**imo veces.<br>
+
+<hr>
 
 ## Shorthand character set:
 ```
