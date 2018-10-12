@@ -119,9 +119,11 @@ Los metacaracteres básicos son los siguientes:
 Consiste en buscar palabras completas intercalando la secuencia `\b` al principio y final de la cadena.
 
 `gato perros cerdo vaca gata gatito gatitas gat`<br>
+
 Localizar palabras de cuatro caracteres de la lista.<br>
-`/\b\w{4}\b/g` :arrow_right: `gato vaca gata`<br>
-Localizar palabras que comiencen por `gat`
-`/\bgat[a-z]+\b/g` :arrow_right: `gato gata gatito gatitas`<br>
+`/\b\w{4}\b/g` :arrow_right: `gato vaca gata`
+
+Localizar palabras que comiencen por `gat`<br>
+`/\bgat[a-z]+\b/g` :arrow_right: `gato gata gatito gatitas`
 
 
