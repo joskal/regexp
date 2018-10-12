@@ -34,7 +34,9 @@ Los metacaracteres básicos son los siguientes:
 <hr>
 
 > ### $
-> **Anchor** (Anclaje).
+> **Anchor** (Anclaje). Devuelve un resultado que coincida con el carácter o rango especificado y que esté cerca del final de la línea.<br>
+> `file01 file02 file03 file02 file01` <br>
+> `/file01$/g` :arrow_right: `file01`
 
 <hr>
 
