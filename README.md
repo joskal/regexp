@@ -27,16 +27,16 @@ Los metacaracteres básicos son los siguientes:
 <hr>
 
 > ### ^ <br>
-> **Anchor** (Anclaje). Devuelve un resultado que coincida con el carácter o rango especificado y que esté cerca del comienzo de la línea. <br>
-> `file01 file02 file03 file02 file01` <br>
-> `/^file01/g` :arrow_right: `file01`
+> **Anchor** (Anclaje). Devuelve un resultado que coincida con el carácter o rango especificado y que esté al comienzo de la línea. <br>
+> `file01begin file02 file03 file02 file01end` <br>
+> `/^file01[a-z]+/g` :arrow_right: `file01begin`
 
 <hr>
 
 > ### $
-> **Anchor** (Anclaje). Devuelve un resultado que coincida con el carácter o rango especificado y que esté cerca del final de la línea.<br>
-> `file01 file02 file03 file02 file01` <br>
-> `/file01$/g` :arrow_right: `file01`
+> **Anchor** (Anclaje). Devuelve un resultado que coincida con el carácter o rango especificado y que esté al final de la línea.<br>
+> `file01begin file02 file03 file02 file01end` <br>
+> `/file01[a-z]+$/g` :arrow_right: `file01end`
 
 <hr>
 
@@ -61,9 +61,10 @@ Los metacaracteres básicos son los siguientes:
 
 > ### * 
 > **Quantifier** (Cuantificador). Localiza el carácter o grupo que le precede entre cero y más veces. <br>
-`/colou*r/g` :arrow_right: color colour colouuur <br>
-`/oh*/g` :arrow_right: o oh ohh ohhh ohhhh ohhhhh <br>
-`/[0-9]*word/g` :arrow_right: word 1word 22word 333word 4444word
+`word 1word 22word 333word 4444word o oh ohh ohhh ohhhh ohhhhh color colour colouuur`
+`/colou*r/g` :arrow_right: `color colour colouuur` <br>
+`/oh*/g` :arrow_right: `o oh ohh ohhh ohhhh ohhhhh` <br>
+`/[0-9]*word/g` :arrow_right: `word 1word 22word 333word 4444word`
 
 <hr>
 
