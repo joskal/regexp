@@ -114,3 +114,11 @@ Los metacaracteres básicos son los siguientes:
 \S  [^\s]                 Localiza aquellos que no sean espacios en blanco
 \b  (^\w|\w$|\W\w|\w\W)   Boundary. Localiza palabra completa \bpalabra\b
 ```
+
+## Boundary
+Consiste en buscar palabras completas intercalando la secuencia '\b' al principio y final de la cadena.
+
+Localizar palabras de cuatro caracteres de la lista siguiente:<br>
+`gato perro cerdo vaca`<br>
+`/\b\w{4}\b/g` :arrow_right: `gato vaca`
+
