@@ -19,38 +19,38 @@ Los metacaracteres se usan en expresiones regulares para criterios de búsqueda 
 
 Los metacaracteres básicos son los siguientes:
 
-> ### \
+> # \
 > **Backslash**. Localiza un metacarácter o carácter no-alfanumérico como carácter literal. <br>
 `!@#$%^&*()_+1234567890abcdef` <br>
 `/\$/g` :arrow_right: `$`
 
 <hr>
 
-> ### ^ <br>
+> # ^ <br>
 > **Anchor** (Anclaje). Devuelve un resultado que coincida con el carácter o rango especificado y que esté al comienzo de la línea. <br>
 > `file01begin file02 file03 file02 file01end` <br>
 > `/^file01[a-z]+/g` :arrow_right: `file01begin`
 
 <hr>
 
-> ### $
+> # $
 > **Anchor** (Anclaje). Devuelve un resultado que coincida con el carácter o rango especificado y que esté al final de la línea.<br>
 > `file01begin file02 file03 file02 file01end` <br>
 > `/file01[a-z]+$/g` :arrow_right: `file01end`
 
 <hr>
 
-> ### |
+> # |
 
 <hr>
 
-> ### . 
+> # . 
 > **Wildcard** (Carácter comodín). Equivale a cualquier carácter literal.<br>
 `/.ar/g` :arrow_right: bar tar jar par
 
 <hr>
 
-> ### ?
+> # ?
 > **Quantifier** (Cuantificador). Localiza el carácter o grupo que le precede entre cero y una veces. <br>
 `color colour oesophagus esophagus jan january` <br>
 `/colou?r/g` :arrow_right: `color colour` <br>
@@ -59,7 +59,7 @@ Los metacaracteres básicos son los siguientes:
 
 <hr>
 
-> ### * 
+> # * 
 > **Quantifier** (Cuantificador). Localiza el carácter o grupo que le precede entre cero y más veces. <br>
 `word 1word 22word 333word 4444word o oh ohh ohhh ohhhh ohhhhh color colour colouuur`
 `/colou*r/g` :arrow_right: `color colour colouuur` <br>
@@ -68,18 +68,18 @@ Los metacaracteres básicos son los siguientes:
 
 <hr>
 
-> ### + 
+> # + 
 > **Quantifier** (Cuantificador). Localiza el carácter o grupo que le precede entre una y más veces. <br>
 `/colou+r/g` :arrow_right: colour colouuur
 
 <hr>
 
-> ### ( )
+> # ( )
 > **Grouping**
 
 <hr>
 
-> ### [ ]
+> # [ ]
 > `bat pat pad metal pan par medal cat` <br>
 > `file-A file-B file-C file-D file-E file-F` <br><br>
 > **Character set** o **Character class**. Localiza los caracteres incluidos entre `[]`en conjunción con otros.<br>
@@ -94,7 +94,7 @@ Los metacaracteres básicos son los siguientes:
 
 <hr>
 
-> ### { }
+> # { }
 > `192882 998 288 3484848 488ASD 39222 22 333 34566 23567`<br> <br>
 > **Limiting the repetition** (limitando la repetición).<br> 
 > **{n}** Localiza el elemento precedente exactamente **n** veces.<br>
