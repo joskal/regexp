@@ -6,12 +6,11 @@ La secuencia de caracteres a buscar va englobada entre dos caracteres slash `/re
 ```
 /regexp/mode
 ```
-Donde `mode` puede ser uno o varios de los siguientes caracteres:
-* **/regex/**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No mode 
-* **/regex/g**&nbsp;&nbsp;&nbsp;Global
-* **/regex/i**&nbsp;&nbsp;&nbsp;Case insensitive 
-* **/regex/s**&nbsp;&nbsp;&nbsp;Single line 
-* **/regex/m**&nbsp;&nbsp;&nbsp;Multiline
+Donde `mode` puede ser uno o varios de los siguientes caracteres: 
+* `/regex/g` Global
+* `/regex/i` Case insensitive 
+* `/regex/s` Single line 
+* `/regex/m` Multiline
 
 ## Metacharacters
 Un metacarácter es un carácter que tiene un significado especial (al contrario que un carácter literal).
