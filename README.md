@@ -130,8 +130,19 @@ Muestra las palabras que comiencen por vocal<br>
 
 ## Groups
 Podemos agrupar caracteres bajo esta forma **(group)**, para así tratarlo como un cuantificador.
-También podemos crear grupos numerador para así usarlos posteriormente.
 
 `impossible possible possibles impossibles`<br>
 `/(im)?possible/g` :arrow_right: `impossible possible possibles impossibles`<br>
 `/\b(im)?possible\b/g` :arrow_right: `impossible possible`
+
+También podemos referenciar grupos numéricamente. Cada grupo que definamos está numerado internamente. La numeración comienza en `\1`.
+
+`123-567-8901-123`<br>
+`/(\d{3})-(\d{3})-(\d{4})-\1/g` :arrow-right: `123-567-8901-123`
+
+Mostrar dos palabras iguales consecutivas.
+```
+near near is the city
+clear clear is the sky
+```
+`/\b(\w+)\b\s+\1/g` :arrow_right: `near near clear clear`
