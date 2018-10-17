@@ -40,7 +40,9 @@ Los metacaracteres básicos son los siguientes:
 <hr>
 
 > # |
-> **Alternation**
+> **Alternation**. Es similar al `[character set]` pero alternando secuencias completas dentro de grupos.
+> `alternar.com alternar.net alternar.usa`<br>
+>`/alternar.(com|us)/g` :arrow_right: `alternar.com alternar.usa`
 
 <hr>
 
