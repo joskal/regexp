@@ -40,6 +40,7 @@ Los metacaracteres básicos son los siguientes:
 <hr>
 
 > # |
+> **Alternation**
 
 <hr>
 
