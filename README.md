@@ -128,4 +128,10 @@ Localizar palabras que comiencen por `gat`<br>
 Muestra las palabras que comiencen por vocal<br>
 `/\b[aeiou][a-z]+\b/g` :arrow_right: `agata eagle alma`
 
+## Groups
+Podemos agrupar caracteres bajo esta forma **(group)**, para así tratarlo como un cuantificador.
+También podemos crear grupos numerador para así usarlos posteriormente.
 
+`impossible possible possibles impossibles`<br>
+`/(im)?possible/g` :arrow_right: `impossible possible possibles impossibles`<br>
+`/\b(im)?possible\b/g` :arrow_right: `impossible possible`
