@@ -112,7 +112,15 @@ Los metacaracteres básicos son los siguientes:
 > near near is the city
 > clear clear is the sky
 > ```
-> `/\b(\w+)\b\s+\1/g` :arrow_right: `near near clear clear`
+> `/\b(\w+)\b\s+\1/g` :arrow_right: `near near clear clear`<br>
+> 
+> **(?:group)** Non capturing group. Consiste en saltar la numeración de un grupo en concreto.
+> ```
+> I like seat and peugeot and seat
+> I like seat and peugeot and peugeot
+> ```
+> `/I like (seat) and (peugeot) and \1/g` :arrow_right: `I like seat and peugeot and seat`<br>
+> `/I like (?:seat) and (peugeot) and \1/g` :arrow_right: `I like seat and peugeot and peugeot`<br>
 
 <hr>
 
