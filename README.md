@@ -74,11 +74,6 @@ Los metacaracteres básicos son los siguientes:
 
 <hr>
 
-> # ( )
-> **Grouping**
-
-<hr>
-
 > # [ ]
 > `bat pat pad metal pan par medal cat` <br>
 > `file-A file-B file-C file-D file-E file-F` <br><br>
@@ -101,6 +96,28 @@ Los metacaracteres básicos son los siguientes:
 > `/\d{3}/g` :arrow_right: `192 882 998 288 348 848 488 392 333 345 235`<br>
 > **{mín,}** Localiza el elemento precedente al menos un **mín**imo veces.<br>
 > **{mín,máx}** Localiza el elemento precedente al menos un **mín**imo veces y no más de un **máx**imo veces.<br>
+
+<hr>
+
+> # (group)
+> **Grouping**
+> Podemos agrupar caracteres bajo esta forma **(group)**, para así tratarlo como un cuantificador.
+> 
+> `impossible possible possibles impossibles`<br>
+> `/(im)?possible/g` :arrow_right: `impossible possible possibles impossibles`<br>
+> `/\b(im)?possible\b/g` :arrow_right: `impossible possible`
+>
+>También podemos referenciar grupos numéricamente. Cada grupo que definamos está numerado internamente. La numeración comienza en `\1`.
+>
+> `123-567-8901-123`<br>
+> `/(\d{3})-(\d{3})-(\d{4})-\1/g` :arrow_right: `123-567-8901-123`
+>
+> Mostrar dos palabras iguales consecutivas.
+> ```
+> near near is the city
+> clear clear is the sky
+> ```
+> `/\b(\w+)\b\s+\1/g` :arrow_right: `near near clear clear`
 
 <hr>
 
@@ -128,22 +145,3 @@ Localizar palabras que comiencen por `gat`<br>
 
 Muestra las palabras que comiencen por vocal<br>
 `/\b[aeiou][a-z]+\b/g` :arrow_right: `agata eagle alma`
-
-## Groups
-Podemos agrupar caracteres bajo esta forma **(group)**, para así tratarlo como un cuantificador.
-
-`impossible possible possibles impossibles`<br>
-`/(im)?possible/g` :arrow_right: `impossible possible possibles impossibles`<br>
-`/\b(im)?possible\b/g` :arrow_right: `impossible possible`
-
-También podemos referenciar grupos numéricamente. Cada grupo que definamos está numerado internamente. La numeración comienza en `\1`.
-
-`123-567-8901-123`<br>
-`/(\d{3})-(\d{3})-(\d{4})-\1/g` :arrow-right: `123-567-8901-123`
-
-Mostrar dos palabras iguales consecutivas.
-```
-near near is the city
-clear clear is the sky
-```
-`/\b(\w+)\b\s+\1/g` :arrow_right: `near near clear clear`
