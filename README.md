@@ -131,6 +131,16 @@ Los metacaracteres básicos son los siguientes:
 > `/file\w*\.(txt|xlsx|docx|pptx)/g` :arrow_right: `file.txt files12.xlsx file123.docx fileabc.pptx` 
 >
 >**Nested Alternation**. Alternación anidada.
+>```
+> toyota 1600cc
+> toyota 2400cc
+> toyota 2000cc
+> honda 1000cc
+> honda 2400cc
+> honda 5000cc
+> ```
+> `/(toyota (1600cc|2000cc)|honda (2400cc|5000cc))/g` :arrow_right: `toyota 1600cc` `toyota 2000cc` `honda 2400cc` `honda 5000cc`
+
 <hr>
 
 
