@@ -40,11 +40,18 @@ Los metacaracteres básicos son los siguientes:
 <hr>
 
 > # |
-> **Alternation**. Es similar al `[character set]` pero alternando secuencias completas dentro de grupos.
+> **Alternation**. Operador `OR`. Es similar al `[character set]` pero operando con secuencias completas dentro de `(grupos)`.
 >
-> `alternar.com alternar.net alternar.es`<br>
->`/alternar\.(com|es)/g` :arrow_right: `alternar.com alternar.es`
-
+> ```
+> alternar.com alternar.net alternar.es alternar.org
+> gray grey
+> hardworking man hardworking lady
+> file.txt files12.xlsx file123.docx fileabc.pptx
+> ```
+>`/alternar\.(com|es|org)/g` :arrow_right: `alternar.com alternar.es alternar.org`<br>
+>`/gr[ae]y/g` :arrow_right: `/gr(a|e)y/g` :arrow_right: `gray grey`<br>
+>`/hardworking (man|lady)/g` :arrow_right: `hardworking man hardworking lady`<br>
+> `/file\w*\.(txt|xlsx|docx|pptx)/g` :arrow_right: `file.txt files12.xlsx file123.docx fileabc.pptx` 
 <hr>
 
 > # . 
