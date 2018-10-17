@@ -39,21 +39,6 @@ Los metacaracteres básicos son los siguientes:
 
 <hr>
 
-> # |
-> **Alternation**. Operador `OR`. Es similar al `[character set]` pero operando con secuencias completas dentro de `(grupos)`.
->
-> ```
-> alternar.com alternar.net alternar.es alternar.org
-> gray grey
-> hardworking man hardworking lady
-> file.txt files12.xlsx file123.docx fileabc.pptx
-> ```
->`/alternar\.(com|es|org)/g` :arrow_right: `alternar.com alternar.es alternar.org`<br>
->`/gr[ae]y/g` :arrow_right: `/gr(a|e)y/g` :arrow_right: `gray grey`<br>
->`/hardworking (man|lady)/g` :arrow_right: `hardworking man hardworking lady`<br>
-> `/file\w*\.(txt|xlsx|docx|pptx)/g` :arrow_right: `file.txt files12.xlsx file123.docx fileabc.pptx` 
-<hr>
-
 > # . 
 > **Wildcard** (Carácter comodín). Equivale a cualquier carácter literal.<br>
 `/.ar/g` :arrow_right: bar tar jar par
@@ -130,6 +115,24 @@ Los metacaracteres básicos son los siguientes:
 > `/\b(\w+)\b\s+\1/g` :arrow_right: `near near clear clear`
 
 <hr>
+
+> # |
+> **Alternation**. Operador `OR`. Es similar al `[character set]` pero operando con secuencias completas dentro de `(grupos)`.
+>
+> ```
+> alternar.com alternar.net alternar.es alternar.org
+> gray grey
+> hardworking man hardworking lady
+> file.txt files12.xlsx file123.docx fileabc.pptx
+> ```
+>`/alternar\.(com|es|org)/g` :arrow_right: `alternar.com alternar.es alternar.org`<br>
+>`/gr[ae]y/g` :arrow_right: `/gr(a|e)y/g` :arrow_right: `gray grey`<br>
+>`/hardworking (man|lady)/g` :arrow_right: `hardworking man hardworking lady`<br>
+> `/file\w*\.(txt|xlsx|docx|pptx)/g` :arrow_right: `file.txt files12.xlsx file123.docx fileabc.pptx` 
+>
+>**Nested Alternation**. Alternación anidada.
+<hr>
+
 
 ## Shorthand character set:
 ```
