@@ -56,10 +56,10 @@ Los metacaracteres básicos son los siguientes:
 
 > # * 
 > **Quantifier** (Cuantificador). Localiza el carácter o grupo que le precede entre cero y más veces. <br>
-`word 1word 22word 333word 4444word o oh ohh ohhh ohhhh ohhhhh color colour colouuur`
-`/colou*r/g` :arrow_right: `color colour colouuur` <br>
-`/oh*/g` :arrow_right: `o oh ohh ohhh ohhhh ohhhhh` <br>
-`/[0-9]*word/g` :arrow_right: `word 1word 22word 333word 4444word`
+`word 1word 22word 333word 4444word o oh ohh ohhh ohhhh ohhhhh color colour colouuur`<br>
+`/colou*r/g` :arrow_right: `color` `colour` `colouuur` <br>
+`/oh*/g` :arrow_right: `o` `oh` `ohh` `ohhh` `ohhhh` `ohhhhh` <br>
+`/[0-9]*word/g` :arrow_right: `word` `1word` `22word` `333word` `4444word`
 
 <hr>
 
