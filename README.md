@@ -25,23 +25,23 @@ Los metacaracteres básicos son los siguientes:
 
 <hr>
 
-> # ^ <br>
-> **Anchor** (Anclaje). Devuelve un resultado que coincida con el carácter o rango especificado y que esté al comienzo de la línea. <br>
-> `file01begin file02 file03 file02 file01end` <br>
-> `/^file01[a-z]+/g` :arrow_right: `file01begin`
-
-<hr>
-
-> # $
-> **Anchor** (Anclaje). Devuelve un resultado que coincida con el carácter o rango especificado y que esté al final de la línea.<br>
-> `file01begin file02 file03 file02 file01end` <br>
-> `/file01[a-z]+$/g` :arrow_right: `file01end`
-
-<hr>
-
 > # . 
 > **Wildcard** (Carácter comodín). Equivale a cualquier carácter literal.<br>
 `/.ar/g` :arrow_right: bar tar jar par
+
+<hr>
+
+> # ^ $
+> **Anchors** (Anclajes)
+> ## ^
+> Devuelve un resultado que coincida con el carácter o rango especificado y que esté al comienzo de la línea. <br>
+> `file01begin file02 file03 file02 file01end` <br>
+> `/^file01[a-z]+/g` :arrow_right: `file01begin`
+>
+> ## $
+> Devuelve un resultado que coincida con el carácter o rango especificado y que esté al final de la línea.<br>
+> `file01begin file02 file03 file02 file01end` <br>
+> `/file01[a-z]+$/g` :arrow_right: `file01end`
 
 <hr>
 
