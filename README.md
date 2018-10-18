@@ -226,4 +226,9 @@ poor worker
 intelligent worker
 ```
 Buscar `worker` en el contexto `social` hacia atrás.<br>
-`/(?<=social) worker/g` :arrow_right: `worker` resultado: 1 coincidencia.
+`/(?<=social)\sworker/g` :arrow_right: `worker` resultado: 1 coincidencia.
+
+## ?<!
+**Negative Lookbehind Assertion**. Operador `!=` en torno a la coincidencia hacia atrás.
+Buscar `worker` que no estén en el contexto `social` ni en `hard`, hacia atrás.<br>
+`/(?<!social|hard)\sworker/g` :arrow_right: `worker` `worker` `worker` resultado: 3 coincidencias.
