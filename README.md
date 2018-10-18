@@ -79,14 +79,14 @@ Los metacaracteres básicos son los siguientes:
 > bat pat pad metal pan par medal cat
 > file-A file-B file-C file-D file-E file-F
 >```
-`/[bc]at/g`  :arrow_right:  `bat cat` <br>
-`/pa[tdnr]/g`  :arrow_right:  `pat pad pan par` <br>
-`/me[td]al/g`  :arrow_right:  `metal medal` <br><br>
-**Character range [start-end]**. Localiza un rango de caracteres.<br>
-`/file-[A-F]/g` :arrow_right:  `file-A` `file-B` `file-C` `file-D` `file-E` `file-F` <br><br>
-**Negating character set or range**. Devuelve un resultado que no **[^]** coincida con el carácter o rango especificado <br>
-`/file[^AB]/g` :arrow_right: `file-C` `file-D` `file-E` `file-F` <br>
-`/file[^A-D]/g` :arrow_right: `file-E` `file-F` <br>
+> `/[bc]at/g`  :arrow_right:  `bat cat` <br>
+> `/pa[tdnr]/g`  :arrow_right:  `pat pad pan par` <br>
+> `/me[td]al/g`  :arrow_right:  `metal medal` <br><br>
+> **Character range [start-end]**. Localiza un rango de caracteres.<br>
+> `/file-[A-F]/g` :arrow_right:  `file-A` `file-B` `file-C` `file-D` `file-E` `file-F` <br><br>
+> **Negating character set or range**. Devuelve un resultado que no **[^]** coincida con el carácter o rango especificado <br>
+> `/file[^AB]/g` :arrow_right: `file-C` `file-D` `file-E` `file-F` <br>
+> `/file[^A-D]/g` :arrow_right: `file-E` `file-F` <br>
 
 <hr>
 
