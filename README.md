@@ -189,4 +189,12 @@ Muestra las palabras que comiencen por vocal<br>
 
 ## Assertions Lookaround
 Esta técnica consiste en localizar un contexto alrededor de una palabra que puede ser hacia delante **(Lookahead)** o hacia atrás **(Lookbehind)**. El resultado que devuelve es la coincidencia buscada pero sin el contexto utilizado.
-## **?=** Possitive Lookahead
+## **?=**
+**Possitive Lookahead**. Operador `AND` en torno a la coincidencia.
+```
+bill paid
+bill not paid
+bill paid
+bill paid
+```
+`/bill(?= paid)/g` :arrow_right: `bill` `bill` `bill` Devuelve el resultado del contexto `bill paid`
