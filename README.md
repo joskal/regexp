@@ -169,6 +169,8 @@ Los metacaracteres básicos son los siguientes:
 \b  (^\w|\w$|\W\w|\w\W)   Boundary. Localiza palabra completa \bpalabra\b
 ```
 
+<hr>
+
 ## Boundary 
 Consiste en buscar palabras completas mediante la secuencia `/bpalabra/b`.
 
@@ -182,3 +184,9 @@ Localizar palabras que comiencen por `gat`<br>
 
 Muestra las palabras que comiencen por vocal<br>
 `/\b[aeiou][a-z]+\b/g` :arrow_right: `agata eagle alma`
+
+<hr>
+
+## Assertions Lookaround
+Esta técnica consiste en localizar un contexto alrededor de una palabra que puede ser hacia delante **(Lookahead)** o hacia atrás **(Lookbehind)**. El resultado que devuelve es la coincidencia buscada pero sin el contexto utilizado.
+## **?=** Possitive Lookahead
