@@ -232,3 +232,17 @@ Buscar `worker` en el contexto `social` hacia atrás.<br>
 **Negative Lookbehind Assertion**. Operador `!=` en torno a la coincidencia hacia atrás.<br>
 Buscar `worker` que no estén en el contexto `social` ni en `hard`, hacia atrás.<br>
 `/(?<!social|hard)\sworker/g` :arrow_right: `worker` `worker` `worker` resultado: 3 coincidencias.
+
+
+<hr>
+
+## Ejemplos
+##1 Buscar fechas en distintos formatos.
+```
+12 - 8 - 2013
+8/12/2011
+9 -9 - 2012
+3/12/2008
+4-2-2002
+```
+`/\d{1,2}\s*[-\/]\s*\d{1,2}\s*[-\/]\s*\d{4}/g`
