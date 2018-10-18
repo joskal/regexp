@@ -229,6 +229,6 @@ Buscar `worker` en el contexto `social` hacia atrás.<br>
 `/(?<=social)\sworker/g` :arrow_right: `worker` resultado: 1 coincidencia.
 
 ## ?<!
-**Negative Lookbehind Assertion**. Operador `!=` en torno a la coincidencia hacia atrás.
+**Negative Lookbehind Assertion**. Operador `!=` en torno a la coincidencia hacia atrás.<br>
 Buscar `worker` que no estén en el contexto `social` ni en `hard`, hacia atrás.<br>
 `/(?<!social|hard)\sworker/g` :arrow_right: `worker` `worker` `worker` resultado: 3 coincidencias.
