@@ -47,28 +47,28 @@ Los metacaracteres básicos son los siguientes:
 
 > # ? * +
 > **Quantifiers** (Cuantificadores). 
-```
-color colour oesophagus esophagus 
-jan january
-word 1word 22word 333word 4444word 
-o oh ohh ohhh ohhhh ohhhhh
-color colour colouuur
-```
+> ```
+> color colour oesophagus esophagus 
+> jan january
+> word 1word 22word 333word 4444word 
+> o oh ohh ohhh ohhhh ohhhhh
+> color colour colouuur
+> ```
 > ## ?
 >Localiza el carácter o grupo que le precede entre cero y una veces. <br>
-`/colou?r/g` :arrow_right: `color colour` <br>
-`/o?esophagus/g` :arrow_right: `oesophagus esophagus` <br>
-`/jan(uary)?/g` :arrow_right: `jan january`
-
+> `/colou?r/g` :arrow_right: `color colour` <br>
+> `/o?esophagus/g` :arrow_right: `oesophagus esophagus` <br>
+> `/jan(uary)?/g` :arrow_right: `jan january`
+> 
 > ## * 
 > Localiza el carácter o grupo que le precede entre cero y más veces. <br>
-`/colou*r/g` :arrow_right: `color` `colour` `colouuur` <br>
-`/oh*/g` :arrow_right: `o` `oh` `ohh` `ohhh` `ohhhh` `ohhhhh` <br>
-`/[0-9]*word/g` :arrow_right: `word` `1word` `22word` `333word` `4444word`
-
+> `/colou*r/g` :arrow_right: `color` `colour` `colouuur` <br>
+> `/oh*/g` :arrow_right: `o` `oh` `ohh` `ohhh` `ohhhh` `ohhhhh` <br>
+> `/[0-9]*word/g` :arrow_right: `word` `1word` `22word` `333word` `4444word`
+> 
 > ## + 
 > Localiza el carácter o grupo que le precede entre una y más veces. <br>
-`/colou+r/g` :arrow_right: `colour` `colouuur`
+> `/colou+r/g` :arrow_right: `colour` `colouuur`
 
 <hr>
 
