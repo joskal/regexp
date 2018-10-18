@@ -237,7 +237,7 @@ Buscar `worker` que no estén en el contexto `social` ni en `hard`, hacia atrás
 <hr>
 
 ## Ejemplos
-##1 Buscar fechas en distintos formatos.
+### 1 - Buscar fechas en distintos formatos.
 ```
 12 - 8 - 2013
 8/12/2011
