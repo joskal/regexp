@@ -33,14 +33,15 @@ Los metacaracteres básicos son los siguientes:
 
 > # ^ $
 > **Anchors** (Anclajes)
+> ```
+> file01begin file02 file03 file02 file01end
+> ```
 > ## ^
 > Devuelve un resultado que coincida con el carácter o rango especificado y que esté al comienzo de la línea. <br>
-> `file01begin file02 file03 file02 file01end` <br>
 > `/^file01[a-z]+/g` :arrow_right: `file01begin`
 >
 > ## $
 > Devuelve un resultado que coincida con el carácter o rango especificado y que esté al final de la línea.<br>
-> `file01begin file02 file03 file02 file01end` <br>
 > `/file01[a-z]+$/g` :arrow_right: `file01end`
 
 <hr>
