@@ -197,4 +197,15 @@ bill not paid
 bill paid
 bill paid
 ```
-`/bill(?= paid)/g` :arrow_right: `bill` `bill` `bill` Devuelve el resultado del contexto `bill paid`
+Buscar `bill` en el contexto de `bill paid`<br>
+`/bill(?= paid)/g` :arrow_right: `bill` `bill` `bill` resultado: 3 coincidencias.
+
+```
+100 USD
+150 JPY
+900 YUA
+750 ITL
+800 USD
+```
+Buscar cantidades expresadas en `USD`<br>
+`/\d+(?=\sUSD)/g` :arrow_right: `100` `800`
