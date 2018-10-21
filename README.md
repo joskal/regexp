@@ -184,7 +184,7 @@ Por defecto, los cuantificadores `= ? *` son de ámbito ambicioso (**greedy**); 
 Sin embargo podemos hacer uso del ámbito perezoso (**lazy**) acotando aún más la búsqueda al indicarle que seleccione hasta la siguiente coincidencia.
 
 `/<.+?>/g` :arrow_right: `<[^>]+>` :arrow_right: `<h1>` `</h1>`<br>
-`/".+?"/g` :arrow_right: `"[^"]+>` :arrow_right: `"rebelion"` `"revolution"`
+`/".+?"/g` :arrow_right: `"[^"]+"` :arrow_right: `"rebelion"` `"revolution"`
 
 ## Boundary 
 Consiste en buscar palabras completas mediante la secuencia `/bpalabra/b`.
