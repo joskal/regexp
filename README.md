@@ -171,6 +171,11 @@ Los metacaracteres básicos son los siguientes:
 
 <hr>
 
+## Greedy Regex vs Lazy Regex
+Por defecto, los cuantificadores `= ? *` son de ámbito ambicioso (**greedy**); esto quiere decir que abarcará desde la primera hasta la última coincidencia en toda su longitud como si fuera una sola.
+
+
+
 ## Boundary 
 Consiste en buscar palabras completas mediante la secuencia `/bpalabra/b`.
 
