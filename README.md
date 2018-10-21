@@ -172,9 +172,19 @@ Los metacaracteres básicos son los siguientes:
 <hr>
 
 ## Greedy Regex vs Lazy Regex
-Por defecto, los cuantificadores `= ? *` son de ámbito ambicioso (**greedy**); esto quiere decir que abarcará desde la primera hasta la última coincidencia en toda su longitud como si fuera una sola.
+```
+<h1>heading</h1>
+"rebelion" and "revolution"
+```
+Por defecto, los cuantificadores `= ? *` son de ámbito ambicioso (**greedy**); esto quiere decir que abarcará desde la primera hasta la última coincidencia seleccionando todo lo que haya por medio.
 
+`/<.+>/g` :arrow_right: `<h1>heading</h1>`<br>
+`/".+"/g` :arrow_right: `"rebelion" and "revolution"`
 
+Sin embargo podemos hacer uso del ámbito perezoso (**lazy**) acotando aún más la búsqueda al indicarle que seleccione hasta la siguiente coincidencia.
+
+`/<.+?>/g` :arrow_right: `<[^>]+>` :arrow_right: `<h1>` `</h1>`<br>
+`/".+?"/g` :arrow_right: `"[^"]+>` :arrow_right: `"rebelion"` `"revolution"`
 
 ## Boundary 
 Consiste en buscar palabras completas mediante la secuencia `/bpalabra/b`.
